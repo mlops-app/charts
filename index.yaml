@@ -1,0 +1,84 @@
+apiVersion: v1
+entries:
+  itops:
+  - apiVersion: v2
+    appVersion: 4.1.18
+    created: "2026-04-24T13:59:43.247466909+02:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: ~16.4
+    description: ITOps - Kubernetes-native IT Operations Platform
+    digest: 28efda86aa83bff7f0613a8ac9cc248c7fb3bba1dd1ed98441dcf8b70c6afb43
+    home: https://www.mlops.hu
+    icon: https://www.mlops.hu/assets/favicon.svg
+    keywords:
+    - itops
+    - operations
+    - sla
+    - monitoring
+    - ticketing
+    - kubernetes
+    kubeVersion: '>=1.23.0-0'
+    maintainers:
+    - email: support@itops.io
+      name: ITOps
+    name: itops
+    sources:
+    - https://github.com/mlops-app/itops
+    type: application
+    urls:
+    - https://charts.mlops.hu/itops-1.16.1.tgz
+    version: 1.16.1
+  itops-agent:
+  - apiVersion: v2
+    appVersion: 1.4.1
+    created: "2026-04-24T13:59:43.248019325+02:00"
+    description: ITOps Agent - Kubernetes Operator for service discovery and SLA monitoring
+    digest: 6933436da9e83cc2cbd69b5e8874cc099e6ecae6c54a6700f19173758caa034d
+    home: https://www.mlops.hu
+    icon: https://www.mlops.hu/assets/favicon.svg
+    keywords:
+    - itops
+    - operator
+    - agent
+    - service-discovery
+    - sla-monitoring
+    kubeVersion: '>=1.23.0-0'
+    maintainers:
+    - email: support@itops.io
+      name: ITOps
+    name: itops-agent
+    sources:
+    - https://github.com/mlops-app/itops-agent-helm
+    type: application
+    urls:
+    - https://charts.mlops.hu/itops-agent-1.4.1.tgz
+    version: 1.4.1
+  sla-portal:
+  - apiVersion: v2
+    appVersion: 1.3.3
+    created: "2026-04-24T13:59:43.248196637+02:00"
+    description: ITOps SLA Portal - Standalone status page for SLA reports
+    digest: 39814637de21e77e6f5b87ee12be91f66587be06abb8de3d7d33666b74e0d9b0
+    home: https://www.mlops.hu
+    icon: https://www.mlops.hu/assets/favicon.svg
+    keywords:
+    - itops
+    - sla
+    - status-page
+    - monitoring
+    - uptime
+    kubeVersion: '>=1.23.0-0'
+    maintainers:
+    - email: support@itops.io
+      name: ITOps
+    name: sla-portal
+    sources:
+    - https://github.com/mlops-app/sla-portal
+    type: application
+    urls:
+    - https://charts.mlops.hu/sla-portal-1.3.3.tgz
+    version: 1.3.3
+generated: "2026-04-24T13:59:43.243332594+02:00"
