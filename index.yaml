@@ -2,15 +2,15 @@ apiVersion: v1
 entries:
   itops:
   - apiVersion: v2
-    appVersion: 4.1.18
-    created: "2026-04-24T13:59:43.247466909+02:00"
+    appVersion: 4.1.19
+    created: "2026-04-24T14:47:13.169551991+02:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
       repository: https://charts.bitnami.com/bitnami
       version: ~16.4
     description: ITOps - Kubernetes-native IT Operations Platform
-    digest: 28efda86aa83bff7f0613a8ac9cc248c7fb3bba1dd1ed98441dcf8b70c6afb43
+    digest: 4ad69b3307a466ba35bc5c9d6a844860177d7c739124c395ea4de4230ff1b1e2
     home: https://www.mlops.hu
     icon: https://www.mlops.hu/assets/favicon.svg
     keywords:
@@ -29,12 +29,12 @@ entries:
     - https://github.com/mlops-app/itops
     type: application
     urls:
-    - https://charts.mlops.hu/itops-1.16.1.tgz
-    version: 1.16.1
+    - https://charts.mlops.hu/itops-1.16.2.tgz
+    version: 1.16.2
   itops-agent:
   - apiVersion: v2
     appVersion: 1.4.1
-    created: "2026-04-24T13:59:43.248019325+02:00"
+    created: "2026-04-24T14:47:13.170067582+02:00"
     description: ITOps Agent - Kubernetes Operator for service discovery and SLA monitoring
     digest: 6933436da9e83cc2cbd69b5e8874cc099e6ecae6c54a6700f19173758caa034d
     home: https://www.mlops.hu
@@ -59,7 +59,7 @@ entries:
   sla-portal:
   - apiVersion: v2
     appVersion: 1.3.3
-    created: "2026-04-24T13:59:43.248196637+02:00"
+    created: "2026-04-24T14:47:13.170238397+02:00"
     description: ITOps SLA Portal - Standalone status page for SLA reports
     digest: 39814637de21e77e6f5b87ee12be91f66587be06abb8de3d7d33666b74e0d9b0
     home: https://www.mlops.hu
@@ -81,4 +81,4 @@ entries:
     urls:
     - https://charts.mlops.hu/sla-portal-1.3.3.tgz
     version: 1.3.3
-generated: "2026-04-24T13:59:43.243332594+02:00"
+generated: "2026-04-24T14:47:13.165338372+02:00"
