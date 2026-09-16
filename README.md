@@ -13,9 +13,9 @@ helm repo update
 
 | Chart | Version | Description |
 |---|---|---|
-| `itops/itops` | 1.16.1 | Core + UI + bundled PostgreSQL |
+| `itops/itops` | 3.0.0 | Backend (5.0.0, on the shared Go core) + UI + bundled PostgreSQL and Redis |
 | `itops/itops-agent` | 1.4.1 | K8s operator for service discovery and SLA reporting |
-| `itops/sla-portal` | 1.3.3 | Standalone public status page (SQLite) |
+| `itops/sla-portal` | 1.4.0 | Standalone public status page (SQLite) |
 
 ## Quick Start
 
@@ -25,7 +25,7 @@ helm repo update
 helm install itops itops/itops -n itops --create-namespace
 ```
 
-Default login: `admin` / `Password123!`.
+Default login: `admin` / the `secretEnv.ITOPS_BOOTSTRAP_ADMIN_PASSWORD` value (`Password123!` unless set). Set `secretEnv.AUTH_JWT_KEYS`, `AUTH_CSRF_KEY` and `ITOPS_OPERATOR_API_KEY` before exposing it.
 
 External exposure:
 
